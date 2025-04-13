@@ -3,82 +3,147 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Card - Spider-Man</title>
-  <style>
-    body {
-      background-color: #1a1a1a;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: url('https://wallpaperaccess.com/full/54671.jpg');
-      background-size: cover;
-    }
-
-    .hero-card {
-      background-color: #f5f5f5;
-      color: #222;
-      width: 350px;
-      padding: 20px;
-      margin: 15px;
-      border: 5px solid #333;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      box-sizing: border-box;
-    }
-
-    .hero-card img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .hero-card h2 {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 24px;
-    }
-
-    .hero-card p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 15px 0;
-    }
-
-    .hero-card .btn {
-      display: block;
-      text-align: center;
-      padding: 10px;
-      background-color: #ff0055;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-
-    .hero-card .btn:hover {
-      opacity: 0.9;
-    }
-  </style>
+  <title>Marvel Legends: Cuộc Phiêu Lưu của Các Siêu Anh Hùng</title>
+  <!-- Sử dụng Google Fonts cho font chữ hiện đại -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="hero-card">
-    <img src="https://pbs.twimg.com/media/FQjFAfwWYAU6vCM.jpg:large" alt="Hình ảnh Spider-Man">
-    <h2>Spider-Man</h2>
+  <!-- Header: Giới thiệu câu chuyện -->
+  <header class="header">
+    <h1>Marvel Legends: Cuộc Phiêu Lưu của Các Siêu Anh Hùng</h1>
     <p>
-      Bị cắn bởi một con nhện phóng xạ, Peter Parker trở thành Spider-Man – người hùng với khả năng bám dính tường, phản
-      xạ siêu phàm và sức mạnh vượt trội.
-      Dù chỉ là một học sinh trung học, anh luôn chiến đấu vì lẽ phải, mang trong mình bài học: "Sức mạnh càng lớn,
-      trách nhiệm càng cao".
+      Trong vũ trụ tối của kẻ thù, các anh hùng của Marvel đã được triệu tập để bảo vệ công lý.
+      Hãy cùng trải nghiệm bí kíp Flexbox qua những màn hình hành động của họ!
     </p>
-    <a href="#" class="btn">Khám Phá Spider-Man</a>
-  </div>
+  </header>
+
+  <main>
+    <!-- Scene 1: Cuộc Gọi Họp của Các Anh Hùng -->
+    <section class="scene" id="scene1">
+      <h2>Scene 1: Cuộc Gọi Họp</h2>
+      <p>
+        Khi bóng tối bao trùm thế giới, Iron Man, Captain America, Thor, Black Widow và Spider-Man đã được triệu tập.
+        Các anh hùng tụ họp vào một flex container, mỗi người thể hiện bản sắc riêng của mình.
+      </p>
+      <div class="flex-container scene1-container">
+        <div class="hero-card">
+          <img src="https://via.placeholder.com/150?text=Iron+Man" alt="Iron Man">
+          <h3>Iron Man</h3>
+          <p>Bộ giáp công nghệ tiên tiến</p>
+        </div>
+        <div class="hero-card">
+          <img src="https://via.placeholder.com/150?text=Captain+America" alt="Captain America">
+          <h3>Captain America</h3>
+          <p>Lãnh đạo dũng cảm</p>
+        </div>
+        <div class="hero-card">
+          <img src="https://via.placeholder.com/150?text=Thor" alt="Thor">
+          <h3>Thor</h3>
+          <p>Sức mạnh của thần sấm</p>
+        </div>
+        <div class="hero-card">
+          <img src="https://via.placeholder.com/150?text=Black+Widow" alt="Black Widow">
+          <h3>Black Widow</h3>
+          <p>Siêu sát thủ thông minh</p>
+        </div>
+        <div class="hero-card">
+          <img src="https://via.placeholder.com/150?text=Spider-Man" alt="Spider-Man">
+          <h3>Spider-Man</h3>
+          <p>Linh hoạt và nhanh nhẹn</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 2: Sự Sắp Xếp Chiến Thuật -->
+    <section class="scene" id="scene2">
+      <h2>Scene 2: Sự Sắp Xếp Chiến Thuật</h2>
+      <p>
+        Trong cuộc họp chiến lược, các anh hùng thay đổi vị trí để tối ưu hóa sức mạnh chiến đấu.
+        Flexbox được sử dụng để thay đổi hướng sắp xếp và thứ tự của từng thành viên.
+      </p>
+      <!-- Flex container sử dụng flex-direction: column và order -->
+      <div class="flex-container column-layout">
+        <div class="hero-card order2">
+          <h3>Captain America</h3>
+          <p>Luôn đứng sát hàng đầu</p>
+        </div>
+        <div class="hero-card order1">
+          <h3>Iron Man</h3>
+          <p>Tiên phong công nghệ</p>
+        </div>
+        <div class="hero-card order3">
+          <h3>Thor</h3>
+          <p>Sức mạnh bất địch</p>
+        </div>
+      </div>
+      <p>
+        Ở đây, thuộc tính <strong>flex-direction</strong> chuyển layout từ hàng sang cột,
+        trong khi <strong>order</strong> xác định thứ tự chiến thuật của các anh hùng.
+      </p>
+    </section>
+
+    <!-- Scene 3: Chiến Thuật Mở Rộng -->
+    <section class="scene" id="scene3">
+      <h2>Scene 3: Chiến Thuật Mở Rộng</h2>
+      <p>
+        Khi chiến trận bùng nổ, không gian chiến đấu cần phân bổ hợp lý. Các anh hùng thể hiện khả năng mở rộng sức
+        chiến đấu
+        bằng cách sử dụng thuộc tính <strong>flex-grow</strong>.
+      </p>
+      <div class="flex-container flex-grow-demo">
+        <div class="hero-card" style="flex-grow: 1;">
+          <h3>Black Widow</h3>
+          <p>Tác động nhanh nhẹn</p>
+        </div>
+        <div class="hero-card" style="flex-grow: 2;">
+          <h3>Spider-Man</h3>
+          <p>Linh hoạt chiếm ưu thế</p>
+        </div>
+        <div class="hero-card" style="flex-grow: 1;">
+          <h3>Thor</h3>
+          <p>Sức mạnh lan tỏa</p>
+        </div>
+      </div>
+      <p>
+        Nhờ thuộc tính <strong>flex-grow</strong>, một số anh hùng có thể mở rộng tầm ảnh hưởng, chiếm nhiều không gian
+        hơn trong trận chiến.
+      </p>
+    </section>
+
+    <!-- Scene 4: Tinh Thần Đồng Đội -->
+    <section class="scene" id="scene4">
+      <h2>Scene 4: Tinh Thần Đồng Đội</h2>
+      <p>
+        Trong một tình huống khó khăn, mỗi anh hùng có thể điều chỉnh vị trí riêng của mình bằng thuộc tính
+        <strong>align-self</strong>.
+        Điều này tạo ra sự đồng bộ hoàn hảo trong chiến lược.
+      </p>
+      <div class="flex-container align-self-demo">
+        <div class="hero-card" style="align-self: flex-start;">
+          <h3>Captain America</h3>
+          <p>Luôn tiên phong</p>
+        </div>
+        <div class="hero-card">
+          <h3>Iron Man</h3>
+          <p>Dẫn dắt từ trung tâm</p>
+        </div>
+        <div class="hero-card" style="align-self: flex-end;">
+          <h3>Spider-Man</h3>
+          <p>Đáp ứng linh hoạt</p>
+        </div>
+      </div>
+      <p>
+        Với <strong>align-self</strong>, từng chiến sĩ có thể tự điều chỉnh vị trí của mình, tăng cường tinh thần đồng
+        đội.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Marvel Flexbox Adventure. All Rights Reserved.</p>
+  </footer>
 </body>
 
 </html>
